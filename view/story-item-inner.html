@@ -8,7 +8,8 @@
   <?php endif ?>
 
   <?php if (isset($story['url']) && $story['url']): $uid = uniqid(); ?>
-    <div id="url<?= $uid ?>" onclick="previewFunc<?= $uid ?>()">preview</div>
+    <a href="javascript:void(0)" onclick="previewFunc<?= $uid ?>()">Preview</a>
+    <div id="url<?= $uid ?>"></div>
     <script type="text/javascript">
       function previewFunc<?= $uid ?>()
       {
