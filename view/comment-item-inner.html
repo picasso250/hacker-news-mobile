@@ -1,0 +1,14 @@
+<div>
+  <strong><?= $comment['by'] ?></strong>
+  <span>on <?= date('Y-m-d H:i:s', $comment['time']) ?></span>
+</div>
+<?php if (isset($comment['text'])): ?>
+  <div><?= $comment['text'] ?></div>
+<?php endif ?>
+<?php if (isset($comment['kids']) && $comment['kids']): ?>
+  <ul>
+    <?php foreach ($comment['kids'] as $id): ?>
+      <?php render('comment-item.html', array('comment' => get_item($id, false))) ?>
+    <?php endforeach ?>
+  </ul>
+<?php endif ?>

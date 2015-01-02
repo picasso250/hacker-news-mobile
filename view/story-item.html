@@ -1,0 +1,8 @@
+<?php if (is_array($story)): ?>
+  <li><?php render('story-item-inner.html', array('story' => $story)) ?></li>
+<?php else: ?>
+  <li id="s<?= $story ?>">loading...</li>
+  <script type="text/javascript">
+    $(function() {$('#s<?= $story ?>').load('/get-story/<?= $story ?>');});
+  </script>
+<?php endif ?>

@@ -1,0 +1,19 @@
+<strong><?= $story['score'] ?></strong>
+<a href="<?= isset($story['url']) && $story['url'] ? $story['url'] : "/story/$story[id]" ?>" target="_blank"><?= $story['title'] ?></a>
+<div>
+  <span>by <?= $story['by'] ?></span>
+  <span>on <?= date('Y-m-d H:i:s', $story['time']) ?></span>
+  <?php if (isset($story['kids']) && $story['kids']): ?>
+    <a href="/story/<?= $story['id'] ?>"><?= count($story['kids']) ?> comments</a>
+  <?php endif ?>
+
+  <?php if (isset($story['url']) && $story['url']): $uid = uniqid(); ?>
+    <div id="url<?= $uid ?>" onclick="previewFunc<?= $uid ?>()">preview</div>
+    <script type="text/javascript">
+      function previewFunc<?= $uid ?>()
+      {
+        $('#url<?= $uid ?>').text('loading...').load('/get-url', {url: '<?= $story["url"] ?>'});
+      }
+    </script>
+  <?php endif ?>
+</div>

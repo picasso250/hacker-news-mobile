@@ -1,0 +1,16 @@
+<h1><?= $story['title'] ?></h1>
+<div>
+  <span>by <?= $story['by'] ?></span>
+  <span>on <?= date('Y-m-d H:i:s', $story['time']) ?></span>
+</div>
+<?php if (isset($story['text'])): ?>
+  <div><?= $story['text'] ?></div>
+<?php endif ?>
+<?php if (isset($story['kids']) && $story['kids']): ?>
+  <span><?= count($story['kids']) ?> comments</span>
+  <ul>
+    <?php foreach ($story['kids'] as $id): ?>
+      <?php render('comment-item.html', array('comment' => get_item($id, false))) ?>
+    <?php endforeach ?>
+  </ul>
+<?php endif ?>

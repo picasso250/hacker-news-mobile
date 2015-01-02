@@ -1,0 +1,8 @@
+<header>
+  <h1>Hacker News Mobile</h1>
+</header>
+
+<?php foreach ($topstories as $id): ?>
+  <?php render('story-item.html', array('story' => get_item($id, false))); ob_flush(); ?>
+<?php endforeach ?>
+
