@@ -1,7 +1,8 @@
 <?php
 
 require 'lib.php';
-$services = require __DIR__.'/services.php';
+$env = parse_ini_file(__DIR__ . '/.env', true);
+$services = require __DIR__ . '/services.php';
 
 header('Cache-Control:private, max-age=0');
 header('Content-Type: text/html; charset=UTF-8');
@@ -52,7 +53,7 @@ if (empty($topstories_plain)) {
 }
 $topstories = json_decode($topstories_plain, true);
 if (json_last_error()) {
-    throw new Exception("json error ".json_last_error(), 1);
+    throw new Exception("json error " . json_last_error(), 1);
 }
 
 render('index.html', compact('topstories'), 'master.html');
