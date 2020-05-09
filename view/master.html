@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hacker News</title>
   <style type="text/css">
-  code {
-    border: 1px solid;
-    display: block;
-    padding: 9px;
-  }
+    code {
+      border: 1px solid;
+      display: block;
+      padding: 9px;
+    }
+
+    ul {
+      border-left: 1px dotted;
+    }
   </style>
   <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.js"></script>
 </head>
+
 <body>
-<?php render($_inner_tpl, $data) ?>
-<?php render('foot.html', $data) ?>
+  <?php render($_inner_tpl, $data) ?>
+  <?php render('foot.html', $data) ?>
+</body>
