@@ -4,11 +4,11 @@
   <span>by <?= $story['by'] ?></span>
   <span>on <?= date('Y-m-d H:i:s', $story['time']) ?></span>
   <?php if (isset($story['kids']) && $story['kids']): ?>
-    <a href="/story/<?= $story['id'] ?>"><?= count($story['kids']) ?> comments</a>
+    <a target="_blank" href="/story/<?= $story['id'] ?>"><?= count($story['kids']) ?> comments</a>
   <?php endif ?>
 
   <?php if (isset($story['url']) && $story['url']): $uid = uniqid(); ?>
-    <a href="javascript:void(0)" onclick="previewFunc<?= $uid ?>()">Preview</a>
+    <a style="display:none" href="javascript:void(0)" onclick="previewFunc<?= $uid ?>()">Preview</a>
     <div id="url<?= $uid ?>"></div>
     <script type="text/javascript">
       function previewFunc<?= $uid ?>()
