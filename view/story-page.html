@@ -4,13 +4,29 @@
   <span>on <?= date('Y-m-d H:i:s', $story['time']) ?></span>
 </div>
 <?php if (isset($story['text'])): ?>
-  <div><?= $story['text'] ?></div>
+<div><?= $story['text'] ?></div>
 <?php endif ?>
 <?php if (isset($story['kids']) && $story['kids']): ?>
-  <span><?= count($story['kids']) ?> comments</span>
-  <ul>
-    <?php foreach ($story['kids'] as $id): ?>
-      <?php render('comment-item.html', array('comment' => get_item($id, false))) ?>
-    <?php endforeach ?>
-  </ul>
+<span><?= count($story['kids']) ?> comments</span>
+<ul>
+  <?php foreach ($story['kids'] as $id): ?>
+  <?php render('comment-item.html', array('comment' => get_item($id, false))) ?>
+  <?php endforeach ?>
+</ul>
 <?php endif ?>
+<script>
+  function onClick() {
+    $(this).off('click', onClick);
+    $(this).next().find('.comment').each(loadComments);
+    $(this).remove();
+  }
+  function loadComments() {
+    var that = $(this).text("loading...");
+    that.load('/get-comment/' + that.data('id'), function () {
+      that.find(".load-more").click(onClick);
+    });
+  }
+  $(function () {
+    $('.comment').each(loadComments);
+  });
+</script>

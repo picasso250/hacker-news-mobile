@@ -6,6 +6,7 @@
   <div><?= $comment['text'] ?></div>
 <?php endif ?>
 <?php if (isset($comment['kids']) && $comment['kids']): ?>
+  <div class="load-more" ><?=count($comment['kids'])?> replies, click to load</div>
   <ul>
     <?php foreach ($comment['kids'] as $id): ?>
       <?php render('comment-item.html', array('comment' => get_item($id, false))) ?>

@@ -3,6 +3,5 @@
 <li><?php render('comment-item-inner.html', compact('comment')) ?></li>
 <?php endif ?>
 <?php else: ?>
-<li id="c<?= $comment ?>">loading...</li>
-<script type="text/javascript">$(function(){$('#c<?= $comment ?>').load('/get-comment/<?= $comment ?>');});</script>
+<li id="c<?= $comment ?>" class="comment" data-id="<?= $comment ?>"></li>
 <?php endif ?>
