@@ -1,8 +1,13 @@
 <?php
 
-require 'lib.php';
-$env = parse_ini_file(__DIR__ . '/.env', true);
-$services = require __DIR__ . '/services.php';
+define("ROOT", dirname(__DIR__));
+
+require ROOT . '/lib.php';
+
+date_default_timezone_set('PRC');
+
+$env = parse_ini_file(ROOT . '/.env', true);
+$services = require ROOT . '/services.php';
 
 header('Cache-Control:private, max-age=0');
 header('Content-Type: text/html; charset=UTF-8');
