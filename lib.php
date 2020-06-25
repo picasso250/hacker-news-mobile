@@ -29,26 +29,26 @@ function get_url_code_cache($url)
 {
     global $services;
     $cache = $services['cache'];
-    $key = 'url'.$url;
+    $key = 'url' . $url;
     $data = $cache->get($key);
     if ($data) {
         return $data;
     }
     list($code, $data) = $arr = get_url_code($url);
     if ($code === 200) {
-        $cache->set($key, $arr, 0, time()+3600*24*7);
+        $cache->set($key, $arr, 0, time() + 3600 * 24 * 7);
     }
     return $arr;
 }
 function get_url_code($url)
 {
     $ch = curl_init($url);
-    curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt ($ch, CURLOPT_TIMEOUT, 5);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 5);
     $data = curl_exec($ch);
     if (curl_errno($ch)) {
-        throw new Exception("curl error ".curl_error($ch), 1);
+        throw new Exception("curl error " . curl_error($ch), 1);
     }
     $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
@@ -88,15 +88,16 @@ function removeChild($node)
 
 function app_log($msg)
 {
-    $file = isset($_SERVER["HTTP_BAE_LOGID"]) ? '/home/bae/log/app.log' : 'app.log';
+    $file = isset($_SERVER["HTTP_BAE_LOGID"]) ? '/home/bae/log/app.log' : __DIR__ . '/app.log';
     $msg = call_user_func_array('sprintf', func_get_args());
+    error_log(sprintf("%s %s\n", date('c'), $msg), 3, $file);
 }
 
 function get_item($id, $is_force = true)
 {
     global $services;
     $cache = $services['cache'];
-    $key = 'item'.$id;
+    $key = 'item' . $id;
     $story_plain = $cache->get($key);
     if (empty($story_plain)) {
         if ($is_force) {
@@ -110,7 +111,7 @@ function get_item($id, $is_force = true)
     }
     $story = json_decode($story_plain, true);
     if (json_last_error()) {
-        throw new Exception("json error ".json_last_error(), 2);
+        throw new Exception("json error " . json_last_error(), 2);
     }
     return $story;
 }

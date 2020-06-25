@@ -3,7 +3,7 @@
   <span>on <?= date('Y-m-d H:i:s', $comment['time']) ?></span>
 </div>
 <?php if (isset($comment['text'])): ?>
-  <div><?= $comment['text'] ?></div>
+  <div class="comment-text"><?= $comment['text'] ?></div>
 <?php endif ?>
 <?php if (isset($comment['kids']) && $comment['kids']): ?>
   <div class="load-more" ><?=count($comment['kids'])?> replies, click to load</div>
