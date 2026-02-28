@@ -1,7 +1,0 @@
-<?php if (is_array($comment)): ?>
-<?php if (!isset($comment['deleted']) || !$comment['deleted']): ?>
-<li><?php render('comment-item-inner.html', compact('comment')) ?></li>
-<?php endif ?>
-<?php else: ?>
-<li id="c<?= $comment ?>" class="comment" data-id="<?= $comment ?>"></li>
-<?php endif ?>

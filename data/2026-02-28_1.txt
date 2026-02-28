@@ -1,0 +1,93 @@
+Source URL: https://help.openai.com/en/articles/6378407-how-to-delete-your-account
+
+Language
+English
+United States
+Login
+How to delete your account
+Delete your account by submitting a request to our Privacy Portal or within ChatGPT directly.
+Updated: 21 days ago
+Deleting your account is permanent and cannot be undone.
+Deleting your account will prevent you from using the account to access OpenAI services, including ChatGPT and API. If you delete your account, we will delete your data within 30 days, except we may retain a limited set of data for longer where required or permitted by law.
+If you subscribed through the Apple App Store or Google Play Store, deleting your OpenAI account does not cancel that mobile subscription. You must cancel it in the Apple App Store or Google Play Store to stop future charges. Please refer to the following articles for more information:
+How to cancel your Apple subscription for ChatGPT in the ChatGPT iOS app
+How to cancel a subscription in the ChatGPT Android app
+If you only want to cancel your ChatGPT Plus subscription without deleting your entire account, please see How to Cancel My ChatGPT Subscription. Deleting your OpenAI account will automatically cancel any active ChatGPT Plus subscription linked to it, ensuring you are not charged after deletion.
+How to delete your OpenAI account
+Option A: Submit a request to our Privacy Portal
+Go to Privacy Portal at https://privacy.openai.com/
+Click on “Make a Privacy Request” in top right corner
+Select "I have a consumer ChatGPT account”
+Select “Delete my ChatGPT account” and follow the steps on the screen.
+If you’re unable to log in, please follow the steps outlined here.
+Option B: Self-serve in ChatGPT
+ChatGPT Webpage
+Sign in to ChatGPT.
+In the top right, click your profile icon.
+Click Settings.
+In Settings click Account.
+Under Delete account click Delete.
+You may only delete your account if you have logged in within the last 10 minutes.
+If you haven't logged in within the last 10 minutes then you'll need to sign in again.
+Confirmation screen will appear where you need to type your account email + "DELETE" into the input fields to unlock the "Permanently delete my account" button
+Once the inputs are filled out you unlock the "Permanently delete my account" button
+Click "Permanently delete my account" to delete your account.
+Mobile Apps (iOS and Android)
+To delete your account using the mobile app, please refer to the Help Center article for your device (iOS or Android):
+How to delete your account in the ChatGPT iOS app
+How to delete my account in the ChatGPT Android app
+Common issues
+Chat retention for deleted vs archived chats
+Deleted chats are hard deleted from our systems within 30 days, unless they have previously been de-identified and disassociated from your account or we have to keep them for security or legal reasons.
+You cannot recover chats once you delete them. If you want to remove a chat from being visible in your chat history but retain it in your account, you should use the archive function.
+Please refer to this article to understand how content may be used to improve model performance and the choices that you have.
+Archived chats are retained just like your unarchived chats. Archiving a chat simply removes it from your chat history sidebar. Archived chats can be found and managed in your ChatGPT Settings.
+For more see How chat retention works in ChatGPT.
+Memory deletion
+You can delete any saved memory by clicking on the delete button next to each memory. You can also delete all your memories by selecting “Delete all”. For more information see our Memory FAQ
+User content opt-out
+ChatGPT and our other services for individuals
+When you use ChatGPT and our other services for individuals, we may use the content you provide to improve model performance. Learn more about your choices on how we use your content to improve model performance here.
+Enterprise services (such as API and ChatGPT Enterprise)
+OpenAI does not train on business data. Learn more about our Enterprise privacy commitments here.
+Deletion of Sora data
+You can delete your Sora data at any time by going into your Sora settings.
+If I delete my account can I create a new account with the same email?
+Yes. You can create a new account using the same email address after 30 days, provided the prior account was fully deleted (not deactivated).
+Can I reactivate my account after it's been deleted?
+No. Deleted accounts cannot be reactivated, but you can create a new account with the same email address after 30 days.
+Click “Sign up” on the ChatGPT login page or our API login page. There are a couple caveats of which to be mindful:
+Email addresses: You can use the same email address after 30 days.
+Phone numbers: New accounts are still subject to our limit of 3 accounts per phone number. Deleted accounts also count toward this limit. Deleting an account does not free up another spot. A phone number can only ever be used up to 3 times for verification to generate the first API key for your account on platform.openai.com.
+Phone verification is not required to create an OpenAI account.
+Phone verification is required for a new account to generate their first API key on platform.openai.com.
+Note: We do not permit reactivating email addresses that were previously were associated with an Enterprise organization, or were disabled for a violation of our terms or policies.
+Can I still use ChatGPT without logging in?
+Yes. Please note that you can only save a conversation by logging in or creating an account. While logged out, we only support one conversation at a time. Please refer to our FAQ for more information.
+How many times can I use my phone number to create OpenAI accounts?
+While the location where phone verification occurs has changed from account creation to first API key generation, the requirements around phone verification are still the following:
+A phone number can only ever be used for phone verification up to 3 times.
+This means if you have 3 OpenAI accounts you can use the same number for all three when completing phone verification on each initial API key generation across those three accounts.
+With some exceptions, we do allow consumers who have deleted their ChatGPT account to re-register using the same phone number. If you have permanently deleted your ChatGPT consumer account (and your account was not disabled for a violation of our terms or policies), we will remove the phone number from our system after 30 days. Once that happens, you may sign up again with the same number.
+See our Phone Verification FAQ.
+Can I change my authentication method after account deletion?
+⚠️ Deleting your account does NOT allow you to change your authentication method.
+That said, if you originally signed up for OpenAI / ChatGPT with an email and password then in future logins you can choose Google/Apple login allowing users in that situation to then login either way.
+Why do I get the error, "You do not have an account because it has been deleted or deactivated"?
+If you get this error when you try to login or create an account it means the account associated with the email address you're trying to use to sign up for / login to an account underwent an account deletion:
+This will happen either because you deleted your account in ChatGPT -- or -- you deleted your account by submitting the email to our Privacy Portal for deletion.
+See also - I deleted my account, but now I want to access it again. Can you reactivate my account?
+Need more help? Contact us
+AI Chat
+Chat now
+AI Phone Call (beta)
+1-888-GPT-0090
+Calls may be recorded to improve OpenAI services. Learn more.
+Related articles
+ChatGPT Android App FAQ
+Frequently asked questions about the ChatGPT Android app
+How can I delete my OpenAI account in the ChatGPT Android app?
+How to delete your OpenAI account from the ChatGPT Android app
+Sora - Billing FAQ
+Was this article helpful?
+Submit
