@@ -76,64 +76,64 @@
     <h1>Hacker News 每日精选 - 2026-02-28</h1>
 
     <div class="entry">
-        <h2>1. OpenAI – 如何注销您的账号</h2>
-        <div class="score">得票数: 475</div>
-        <p>原文链接: <a href="https://help.openai.com/en/articles/6378407-how-to-delete-your-account" target="_blank">View Article</a></p>
+        <h2>1. MinIO 已死，MinIO 万岁</h2>
+        <div class="score">得票数: 133</div>
+        <p>原文链接: <a href="https://blog.vonng.com/en/db/minio-resurrect/" target="_blank">View Article</a></p>
         <div class="summary">
-            <strong>总结：</strong> 本文详细介绍了注销 OpenAI 账号的步骤。注销是永久性且不可逆的操作，一旦完成，用户将无法再使用该账号访问 ChatGPT、API 等服务。OpenAI 通常会在 30 天内删除相关数据。文中特别提醒，通过移动端（Apple 或 Google）订阅的用户，注销账号并不会自动取消订阅，需要手动在应用商店进行操作，以免产生额外费用。
+            <strong>总结：</strong> 随着 MinIO 官方仓库被归档并进入“不再维护”状态，开源界掀起了一场“复活”运动。Pigsty 的维护者 Vonng 宣布 fork 了 MinIO，并致力于恢复被移除的管理员控制台（Admin Console）以及重建二进制分发管道（Docker/RPM/DEB）。作者认为，尽管 MinIO 公司转向了更封闭的商业模式，但 AGPL 协议确保了社区有权继续开发和分发这个已经“功能完备”的对象存储软件。
         </div>
         <div class="comments">
             <h3>热门评论翻译：</h3>
             <div class="comment-item">
-                <div class="comment-translation">OpenAI 是大型语言模型提供商中最不可信的。Sam Altman 违背了他在参议院听证会上的警告，OpenAI 现在完全转而采用 Facebook 那套“快速行动，打破常规”的策略，甚至不惜破坏社会。它已经从最初的科学实验室完全转变为商业驱动，这也是为什么核心科学家都已离职。</div>
+                <div class="comment-translation">“MinIO 作为一个兼容 S3 的对象存储已经功能完备，是成熟的软件。”我不明白这两行是怎么写到一块儿的。要么保持 S3 兼容，要么永远冻结当前接口。随着官方 MinIO 或 S3 本身的 API 更新，这个 fork 的兼容性很快就会出问题。</div>
             </div>
             <div class="comment-item">
-                <div class="comment-translation">我本来正准备从 OpenAI 转到 Anthropic，但在注册时发现 Claude 暂时不对新用户开放。这时机太不凑巧了。</div>
+                <div class="comment-translation">很高兴看到有人接手，这是开源的主要优势之一。我怀疑一个人是否能成功维护，但我从不阻止他人尝试创造价值。另外，我越来越反感这类 AI 生成的文章，它们冗长乏味，让人怀疑内容的真实性。我宁愿看文笔稍差但言简意赅的文章。</div>
             </div>
             <div class="comment-item">
-                <div class="comment-translation">我很久以前就停止给 OpenAI 付费了。注销账号可能会影响他们的估值。我选择了另一条路：免费使用他们的额度，希望这能让他们早点倒闭。讽刺的是，我昨晚刚订阅了 Anthropic，只是为了支持他们对抗美国政府。</div>
+                <div class="comment-translation">我想推荐一下 Chainguard，他们也维护了一个 fork 很久了。对于 Web 界面，我之前用 minio-console 项目。不过这周我换到了 rustfs，目前感觉非常棒，推荐给小规模用户，它成熟得很快。</div>
             </div>
         </div>
     </div>
 
     <div class="entry">
-        <h2>2. Unsloth Dynamic 2.0 GGUFs</h2>
-        <div class="score">得票数: 62</div>
-        <p>原文链接: <a href="https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs" target="_blank">View Article</a></p>
+        <h2>2. Windows 95 用户界面：可用性工程案例研究 (1996)</h2>
+        <div class="score">得票数: 34</div>
+        <p>原文链接: <a href="https://dl.acm.org/doi/fullHtml/10.1145/238386.238611" target="_blank">View Article</a></p>
         <div class="summary">
-            <strong>总结：</strong> Unsloth 介绍了其最新的 Dynamic 2.0 GGUF 量化技术。这一突破性进展显著提升了本地运行大语言模型（如 Qwen 3.5）的效率。通过这种动态量化方式，用户可以在主流显卡（如 RTX 5080）上以极高的速度（如 62.98 tokens/sec）运行大参数模型，同时在模型体积、推理速度和预测精度之间取得了更好的平衡，极大降低了本地 AI 部署的门槛。
+            <strong>总结：</strong> 这是一篇经典的可用性研究报告，回顾了 Windows 95 界面设计背后的严谨测试。与现代流行的“扁平化”设计不同，Windows 95 的设计初衷是让用户通过视觉暗示（如阴影和凸起）清晰地识别可点击元素。文章引发了人们对现代 UI 设计趋势（如 macOS Tahoe 过度圆角化）的集体反思，认为现代设计往往为了美学而牺牲了实用性和清晰度。
         </div>
         <div class="comments">
             <h3>热门评论翻译：</h3>
             <div class="comment-item">
-                <div class="comment-translation">Unsloth 今天在 Qwen 3.5 本地模型上取得了重大突破。使用 RTX 5080 在 Q4 量化下，20 万上下文的运行速度达到了每秒 62.98 个 token。</div>
+                <div class="comment-translation">设计师往往比开发者更难接受反馈。这解释了为什么尽管扁平化 UI 被证明存在可用性缺陷却依然流行。每一年的可用性都在下降，比如 macOS Tahoe 明显不如 Sequoia。别指望苹果会修复那些过度圆角的窗口。</div>
             </div>
             <div class="comment-item">
-                <div class="comment-translation">这非常有趣，根据博客内容，他们似乎使用了类似于我在 ggufy 项目中生成“层敏感度”数据的技术，该项目更侧重于扩散（图像）模型。</div>
+                <div class="comment-translation">看看那是多么清晰、专业且好用。这篇报告写得很好。在那样的测试和投入下，绝对不会搞出今天 Windows 这种糟糕的局面。Mac OS 也在加速倒退，他们刚从 Jony Ive 的风格中恢复一点，又让包装设计师来管 UI，搞出了“流体玻璃”那种烂摊子。</div>
             </div>
             <div class="comment-item">
-                <div class="comment-translation">我在本地运行 Llama 3.2 3B 进行低延迟分类。在那个规模下，Q2 量化会开始出现判断错误，而 Q4 则是正确的。所以这里的 KL 散度数据比 MMLU 测试表对我来说更有用。</div>
+                <div class="comment-translation">这就是典型的“如果没坏就别修它”。Windows 95 奠定了现代桌面交互的基础。</div>
             </div>
         </div>
     </div>
 
     <div class="entry">
-        <h2>3. 我们不会被分裂 (Not Divided)</h2>
-        <div class="score">得票数: 1881</div>
-        <p>原文链接: <a href="https://notdivided.org" target="_blank">View Article</a></p>
+        <h2>3. Obsidian Sync 推出无头客户端 (Headless Client)</h2>
+        <div class="score">得票数: 352</div>
+        <p>原文链接: <a href="https://help.obsidian.md/sync/headless" target="_blank">View Article</a></p>
         <div class="summary">
-            <strong>总结：</strong> 这是一封由数百名 Google 和 OpenAI 员工共同签署的公开信。信中揭露了美国国防部试图动用《国防生产法》，强迫 Anthropic 等 AI 公司为其提供用于军事目的、国内大规模监控以及“无人干预自主杀伤”的模型。员工们呼吁各大 AI 公司领导层摒弃分歧，共同抵制这些可能威胁人权和安全的军事需求，坚守 AI 开发的伦理底线。
+            <strong>总结：</strong> 笔记软件 Obsidian 官方推出了无头同步客户端（Beta 版），允许用户在不运行桌面 App 的情况下同步库（Vault）。这对于服务器部署、CI/CD 管道或自动化工作流非常有用。该工具基于 Node.js，通过命令行进行操作，并保留了原有的端到端加密特性。同时，Obsidian 还推出了官方 CLI 工具，标志着其向开发者友好型工具迈出的重要一步。
         </div>
         <div class="comments">
             <h3>热门评论翻译：</h3>
             <div class="comment-item">
-                <div class="comment-translation">这让我想起了《黑镜》里关于蜜蜂的那一集（《全网公敌》），那里被推特点名的人成为了真实的目标。</div>
+                <div class="comment-translation">新动态：Obsidian 加入了 CLI 阵营。最近我一直在配合 AI 命令行工具使用 Obsidian，由于它本质上就是 Markdown 文件目录树，完全不需要任何插件就能玩得很开心。</div>
             </div>
             <div class="comment-item">
-                <div class="comment-translation">这对美国经济和法治有更广泛的影响。如果旨在应对国家安全风险的政府采购规则可以被滥用来惩罚那些“不够忠诚”的公司，那么下一次会不会是苹果或亚马逊？这是美国的一个重要转折点。</div>
+                <div class="comment-translation">噢！我参与了这个项目的开发。如果有人有疑问，我会尽力回答！</div>
             </div>
             <div class="comment-item">
-                <div class="comment-translation">AI 公司反击的最好方式是提醒那些提出这些需求的人：AI 确切知道他们住在哪里。这些能力一旦失控或被外部对手利用，将危及他们及其家人的安全。这一底线永远不应被逾越。</div>
+                <div class="comment-translation">我希望 Obsidian 能支持编辑单个 Markdown 文件。如果我的项目里有个 readme.md，我不想为了打开它而专门创建一个带有配置文件的 Obsidian 库。</div>
             </div>
         </div>
     </div>
