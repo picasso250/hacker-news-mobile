@@ -42,8 +42,10 @@ def main():
         for i, story in enumerate(stories):
             title = story.get('title', 'No Title')
             url = story.get('url', f"https://news.ycombinator.com/item?id={story.get('id')}")
+            score = story.get('score', 0)
             f.write(f"## {i+1}. {title}\n")
             f.write(f"URL: {url}\n")
+            f.write(f"Score: {score}\n")
             f.write(f"HN Link: https://news.ycombinator.com/item?id={story.get('id')}\n\n")
 
             f.write("### Top Comments\n")

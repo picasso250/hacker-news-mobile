@@ -30,6 +30,11 @@
             margin-top: 0;
             color: #e67e22;
         }
+        .score {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
         .entry a {
             color: #3498db;
             text-decoration: none;
@@ -39,7 +44,25 @@
         }
         .summary {
             margin-top: 15px;
-            font-size: 1.1em;
+            background: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment-item {
+            font-size: 0.95em;
+            border-top: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .comment-original {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        .comment-translation {
+            color: #2c3e50;
         }
         footer {
             margin-top: 40px;
@@ -54,25 +77,64 @@
 
     <div class="entry">
         <h2>1. OpenAI – 如何注销您的账号</h2>
+        <div class="score">得票数: 475</div>
         <p>原文链接: <a href="https://help.openai.com/en/articles/6378407-how-to-delete-your-account" target="_blank">View Article</a></p>
         <div class="summary">
             <strong>总结：</strong> 本文详细介绍了注销 OpenAI 账号的步骤。注销是永久性且不可逆的操作，一旦完成，用户将无法再使用该账号访问 ChatGPT、API 等服务。OpenAI 通常会在 30 天内删除相关数据。文中特别提醒，通过移动端（Apple 或 Google）订阅的用户，注销账号并不会自动取消订阅，需要手动在应用商店进行操作，以免产生额外费用。
+        </div>
+        <div class="comments">
+            <h3>热门评论翻译：</h3>
+            <div class="comment-item">
+                <div class="comment-translation">OpenAI 是大型语言模型提供商中最不可信的。Sam Altman 违背了他在参议院听证会上的警告，OpenAI 现在完全转而采用 Facebook 那套“快速行动，打破常规”的策略，甚至不惜破坏社会。它已经从最初的科学实验室完全转变为商业驱动，这也是为什么核心科学家都已离职。</div>
+            </div>
+            <div class="comment-item">
+                <div class="comment-translation">我本来正准备从 OpenAI 转到 Anthropic，但在注册时发现 Claude 暂时不对新用户开放。这时机太不凑巧了。</div>
+            </div>
+            <div class="comment-item">
+                <div class="comment-translation">我很久以前就停止给 OpenAI 付费了。注销账号可能会影响他们的估值。我选择了另一条路：免费使用他们的额度，希望这能让他们早点倒闭。讽刺的是，我昨晚刚订阅了 Anthropic，只是为了支持他们对抗美国政府。</div>
+            </div>
         </div>
     </div>
 
     <div class="entry">
         <h2>2. Unsloth Dynamic 2.0 GGUFs</h2>
+        <div class="score">得票数: 62</div>
         <p>原文链接: <a href="https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs" target="_blank">View Article</a></p>
         <div class="summary">
             <strong>总结：</strong> Unsloth 介绍了其最新的 Dynamic 2.0 GGUF 量化技术。这一突破性进展显著提升了本地运行大语言模型（如 Qwen 3.5）的效率。通过这种动态量化方式，用户可以在主流显卡（如 RTX 5080）上以极高的速度（如 62.98 tokens/sec）运行大参数模型，同时在模型体积、推理速度和预测精度之间取得了更好的平衡，极大降低了本地 AI 部署的门槛。
+        </div>
+        <div class="comments">
+            <h3>热门评论翻译：</h3>
+            <div class="comment-item">
+                <div class="comment-translation">Unsloth 今天在 Qwen 3.5 本地模型上取得了重大突破。使用 RTX 5080 在 Q4 量化下，20 万上下文的运行速度达到了每秒 62.98 个 token。</div>
+            </div>
+            <div class="comment-item">
+                <div class="comment-translation">这非常有趣，根据博客内容，他们似乎使用了类似于我在 ggufy 项目中生成“层敏感度”数据的技术，该项目更侧重于扩散（图像）模型。</div>
+            </div>
+            <div class="comment-item">
+                <div class="comment-translation">我在本地运行 Llama 3.2 3B 进行低延迟分类。在那个规模下，Q2 量化会开始出现判断错误，而 Q4 则是正确的。所以这里的 KL 散度数据比 MMLU 测试表对我来说更有用。</div>
+            </div>
         </div>
     </div>
 
     <div class="entry">
         <h2>3. 我们不会被分裂 (Not Divided)</h2>
+        <div class="score">得票数: 1881</div>
         <p>原文链接: <a href="https://notdivided.org" target="_blank">View Article</a></p>
         <div class="summary">
             <strong>总结：</strong> 这是一封由数百名 Google 和 OpenAI 员工共同签署的公开信。信中揭露了美国国防部试图动用《国防生产法》，强迫 Anthropic 等 AI 公司为其提供用于军事目的、国内大规模监控以及“无人干预自主杀伤”的模型。员工们呼吁各大 AI 公司领导层摒弃分歧，共同抵制这些可能威胁人权和安全的军事需求，坚守 AI 开发的伦理底线。
+        </div>
+        <div class="comments">
+            <h3>热门评论翻译：</h3>
+            <div class="comment-item">
+                <div class="comment-translation">这让我想起了《黑镜》里关于蜜蜂的那一集（《全网公敌》），那里被推特点名的人成为了真实的目标。</div>
+            </div>
+            <div class="comment-item">
+                <div class="comment-translation">这对美国经济和法治有更广泛的影响。如果旨在应对国家安全风险的政府采购规则可以被滥用来惩罚那些“不够忠诚”的公司，那么下一次会不会是苹果或亚马逊？这是美国的一个重要转折点。</div>
+            </div>
+            <div class="comment-item">
+                <div class="comment-translation">AI 公司反击的最好方式是提醒那些提出这些需求的人：AI 确切知道他们住在哪里。这些能力一旦失控或被外部对手利用，将危及他们及其家人的安全。这一底线永远不应被逾越。</div>
+            </div>
         </div>
     </div>
 
