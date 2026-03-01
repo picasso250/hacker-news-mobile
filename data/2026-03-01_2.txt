@@ -1,0 +1,5 @@
+Source URL: https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should
+
+Error fetching https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should with Playwright: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should", waiting until "networkidle"
