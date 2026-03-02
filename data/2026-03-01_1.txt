@@ -1,0 +1,36 @@
+Source URL: https://developer.chrome.com/blog/webmcp-epp
+
+Skip to main content
+developer.chrome.com uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic. Learn more
+OK, got it
+/
+Sign in
+Blog
+On this page
+Structured interactions for the agentic web
+Use cases
+Join the early preview program
+Chrome for Developers
+Blog
+Was this helpful?
+WebMCP is available for early preview
+André Cipriani Bandarra
+Published: February 10, 2026
+As the agentic web evolves, we want to help websites play an active role in how AI agents interact with them. WebMCP aims to provide a standard way for exposing structured tools, ensuring AI agents can perform actions on your site with increased speed, reliability, and precision.
+By defining these tools, you tell agents how and where to interact with your site, whether it's booking a flight, filing a support ticket, or navigating complex data. This direct communication channel eliminates ambiguity and allows for faster, more robust agent workflows.
+Structured interactions for the agentic web
+WebMCP proposes two new APIs that allow browser agents to take action on behalf of the user:
+Declarative API: Perform standard actions that can be defined directly in HTML forms.
+Imperative API: Perform complex, more dynamic interactions that require JavaScript execution.
+These APIs serve as a bridge, making your website "agent-ready" and enabling more reliable and performant agent workflows compared to raw DOM actuation.
+Use cases
+Imagine an agent that can handle complex tasks for your users with confidence and speed.
+Customer support: Help users create detailed customer support tickets, by enabling agents to fill in all of the necessary technical details automatically.
+Ecommerce: Users can better shop your products when agents can easily find what they're looking for, configure particular shopping options, and navigate checkout flows with precision.
+Travel: Users could more easily get the exact flights they want, by allowing the agent to search, filter results, and handle bookings using structured data to ensure accurate results every time.
+Join the early preview program
+WebMCP is available for prototyping to early preview program participants.
+Sign up for the early preview program to gain access to the documentation and demos, stay up-to-date with the latest changes, and discover new APIs.
+Was this helpful?
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-02-10 UTC.
